@@ -1,5 +1,13 @@
 # @likec4/config
 
+## 1.61.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @likec4/core@1.61.1
+  - @likec4/log@1.61.1
+
 ## 1.61.0
 
 ### Patch Changes

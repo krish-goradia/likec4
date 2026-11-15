@@ -1,5 +1,19 @@
 # @likec4/language-server
 
+## 1.61.1
+
+### Patch Changes
+
+- [#3556](https://github.com/likec4/likec4/pull/3556) [`27b3257`](https://github.com/likec4/likec4/commit/27b3257302ce40318b241b298e92825623e34391) Thanks [@amandomv](https://github.com/amandomv)! - Fix references to elements and deployment nodes added with `extend` in a project that includes another one. In a workspace with several projects they failed to resolve, depending on file names for nested targets and always for top-level ones.
+
+- [#3573](https://github.com/likec4/likec4/pull/3573) [`0c3b152`](https://github.com/likec4/likec4/commit/0c3b152276de46705d6f47bf53e281d32a29e7c8) Thanks [@amandomv](https://github.com/amandomv)! - Elements and deployment nodes added with `extend` in a project that includes another one are now found by name inside another `extend` body, inside a `view of` view and through a deployed instance. Before, completion there could miss them, depending on which project was processed last.
+- Updated dependencies [[`4e082a2`](https://github.com/likec4/likec4/commit/4e082a2eb642cb4a323c6e5de2d6ff5e92cb3db6), [`55955d7`](https://github.com/likec4/likec4/commit/55955d7e20cbf5a6f8a377e4b68e50f0cd771ba3)]:
+  - @likec4/generators@1.61.1
+  - @likec4/config@1.61.1
+  - @likec4/core@1.61.1
+  - @likec4/layouts@1.61.1
+  - @likec4/log@1.61.1
+
 ## 1.61.0
 
 ### Patch Changes

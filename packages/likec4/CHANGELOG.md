@@ -1,5 +1,13 @@
 # likec4
 
+## 1.61.1
+
+### Patch Changes
+
+- [#3574](https://github.com/likec4/likec4/pull/3574) [`d767d56`](https://github.com/likec4/likec4/commit/d767d565836464041f891269fd5700902a666417) Thanks [@davydkov](https://github.com/davydkov)! - `likec4` now bundles `@likec4/core` and exposes it under the same subpaths: `likec4/core`, `likec4/core/builder`, `likec4/core/compute-view`, `likec4/core/geometry`, `likec4/core/model`, `likec4/core/styles`, `likec4/core/types` and `likec4/core/utils`. The layout engine is available as `likec4/layouts`, typed against the same core. `likec4/react` and the bundled app share this single copy. If you import both `likec4` and `@likec4/core`, you now get two separate copies, so `instanceof` checks between them won't work; prefer `likec4/core/*`.
+
+- [#3481](https://github.com/likec4/likec4/pull/3481) [`e7b95b1`](https://github.com/likec4/likec4/commit/e7b95b13cad284232cb1c226b83f82533ebafc38) Thanks [@gregoreficint](https://github.com/gregoreficint)! - Image exports with `--notation` can place the notation in any corner with `--notation-position` (default `bottom-right`) and choose the labels with `--notation-text`: `short` (text before the first `:`, default), `full` or `kind`. Notation text is no longer cut off, and the panel has a translucent background, so it stays readable in viewers that show transparency as dark.
+
 ## 1.61.0
 
 ### Patch Changes
